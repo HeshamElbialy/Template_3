@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Secondary Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>template 3</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="fixed-top navbar navbar-expand-lg navOnScroll" id="myNav">
+      <div class="container-fluid container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png (1).webp" alt="Logo" />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item px-3">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item px-3">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Reservaion
+              </a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link">About</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div></div>
+        </div>
+        <ul class="social d-flex align-items-center m-0">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+          </li>
+          <li
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <a href="#">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Sidebar -->
+    <div class="sidebar">
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">
+            Offcanvas right
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item px-3">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item px-3">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Reservaion
+              </a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link">About</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item px-3 mt-4">
+              <button class="btn btn-danger">Reservaion</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Sidebar -->
+    <!-- Start Header -->
+    <header class="header vh-100">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide h-100">
+        <div class="carousel-inner slider h-100">
+          <div class="carousel-item active h-100" data-bs-interval="10000">
+            <img
+              src="./images/master-slides-01.jpg.webp"
+              class="d-block w-100 h-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-block caption text-light">
+              <h3 data-aos="fade-up" data-aos-duration="1000">Welcome To</h3>
+              <h1 data-aos="fade-up" data-aos-duration="1000">Pato Place</h1>
+              <button
+                class="btn"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+              >
+                <!-- <a href="/#"> -->
+                Explore Our Services
+                <!-- </a> -->
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item h-100" data-bs-interval="2000">
+            <img
+              src="./images/master-slides-02.jpg.webp"
+              class="d-block w-100 h-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-block caption">
+              <h3>Welcome To</h3>
+              <h1>Pato Place</h1>
+              <button>
+                Explore Our Services <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item h-100" data-bs-interval="2000">
+            <img
+              src="./images/slide1-01.jpg.webp"
+              class="d-block w-100 h-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-block caption">
+              <h3>Welcome To</h3>
+              <h1>Pato Place</h1>
+              <button>
+                Explore Our Services <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start About -->
+    <section class="about">
+      <div class="about-container container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 col-md-6">
+            <div class="about-left">
+              <div class="headline info text-center">
+                <h3>Italian Restaurant</h3>
+                <h1>WELCOME</h1>
+                <p>
+                  Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis
+                  est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante
+                  egestas mi, ac facilisis ligula sem id neque.
+                </p>
+                <button class="seconedary-btn">
+                  our story
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="about-right">
+              <div class="image-box">
+                <img class="w-75" src="./images/our-story-01.jpg.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About -->
+    <!-- Start Banner -->
+    <section class="banner d-flex justify-content-center align-items-center">
+      <div class="banner-container">
+        <div class="intro text-center">
+          <h4>Discover</h4>
+          <h2>pato place</h2>
+        </div>
+      </div>
+    </section>
+    <!-- End Banner -->
+    <!-- Start work -->
+    <section class="work">
+      <div class="work-container container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img
+                src="./images/intro-01.jpg.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">ROMANTIC RESTAURANT</h5>
+                <p class="card-text">
+                  Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
+                  eros.
+                </p>
+                <a href="#" class="btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img
+                src="./images/intro-02.jpg.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">DELICIOUS FOOD</h5>
+                <p class="card-text">
+                  Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
+                  eros.
+                </p>
+                <a href="#" class="btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img
+                src="./images/intro-04.jpg.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">RED WINES YOU LOVE</h5>
+                <p class="card-text">
+                  Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
+                  eros.
+                </p>
+                <a href="#" class="btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Work -->
+    <!-- Start MENU -->
+    <section class="menu">
+      <div class="menu-container container">
+        <div class="headline">
+          <h3>Discover</h3>
+          <h1>OUR MENU</h1>
+        </div>
+        <div class="row g-3">
+          <div class="col-lg-4 col-md-4">
+            <div class="image-box">
+              <img src="./images/our-menu-01.jpg.webp" alt="" class="w-100" />
+              <div class="title">
+                <h3>LUANCH</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="image-box">
+              <img src="./images/our-menu-05.jpg.webp" alt="" class="w-100" />
+              <div class="title">
+                <h3>DINNER</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="row g-5">
+              <div class="col-lg-12">
+                <div class="image-box mb-4">
+                  <img
+                    src="./images/our-menu-08.jpg.webp"
+                    alt=""
+                    class="w-100"
+                  />
+                  <div class="title">
+                    <h3>DRINK</h3>
+                  </div>
+                </div>
+                <div class="image-box">
+                  <img
+                    src="./images/our-menu-10.jpg.webp"
+                    alt=""
+                    class="w-100"
+                  />
+                  <div class="title">
+                    <h3>STARTERS</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8">
+            <div class="image-box">
+              <img
+                src="./images/our-menu-13.jpg.webp"
+                alt=""
+                class="w-100 h-100"
+              />
+              <div class="title">
+                <h3>HAPPY OUR</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="image-box">
+              <img src="./images/our-menu-16.jpg.webp" alt="" class="w-100" />
+              <div class="title">
+                <h3>DESSERT</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End MENU -->
+    <!-- Start Events -->
+    <section class="event h-100">
+      <div class="event-container container">
+        <div class="headline">
+          <h3>Upcomming</h3>
+          <h1>Events</h1>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="card-box d-flex align-items-center g-4"
+        >
+          <div class="image-box">
+            <img class="w-100 h-100" src="./images/event-02.jpg.webp" alt="" />
+          </div>
+          <div class="text-box h-100 text-center">
+            <h4>WINS DURING SPECIFIC NIGHTS</h4>
+            <p>
+              Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est.
+              Sed fringilla, nunc sed imperdiet lacinia
+            </p>
+            <div class="clock d-flex justify-content-center align-items-center">
+              <div class="sm-box">
+                <h2>25</h2>
+                <p>DAYS</p>
+              </div>
+              <div class="sm-box">
+                <h2>11</h2>
+                <p>HOURS</p>
+              </div>
+              <div class="sm-box">
+                <h2>13</h2>
+                <p>MINUTES</p>
+              </div>
+              <div class="sm-box">
+                <h2>50</h2>
+                <p>SECONEDS</p>
+              </div>
+            </div>
+          </div>
+          <!-- <button>VIEW DETAILS</button> -->
+        </div>
+      </div>
+    </section>
+    <!-- End Events -->
+    <!-- Start booking -->
+    <section class="booking">
+      <div class="booking-container container">
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="booking-left">
+              <div class="headline">
+                <h3>Reservation</h3>
+                <h1>BOOK TABLE</h1>
+              </div>
+              <form
+                action=""
+                class="d-flex justify-content-center align-items-center"
+              >
+                <div class="left-inputs">
+                  <div class="input-box">
+                    <label class="d-block" for="">Date</label>
+                    <input type="date" placeholder="Date" />
+                  </div>
+                  <div class="input-box">
+                    <label class="d-block" for="">Time</label>
+                    <input type="time" placeholder="Time" />
+                  </div>
+                  <div class="input-box">
+                    <label class="d-block" for="">Persons</label>
+                    <input type="number" placeholder="Persons" />
+                  </div>
+                </div>
+                <div class="right-inputs">
+                  <div class="input-box">
+                    <label class="d-block" for="">Name</label>
+                    <input type="Name" placeholder="Name" />
+                  </div>
+                  <div class="input-box">
+                    <label class="d-block" for="">Phone</label>
+                    <input type="text" placeholder="Phone" />
+                  </div>
+                  <div class="input-box">
+                    <label class="d-block" for="">Email</label>
+                    <input type="email" placeholder="Email" />
+                  </div>
+                </div>
+              </form>
+              <div class="btn-box text-center">
+                <button class="btn">BOOK NOW</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="booking-right">
+              <img class="w-100" src="./images/booking-01.jpg.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End booking -->
+    <!-- Start Testimonials -->
+    <section class="testimonials">
+      <div class="testimonials-container container">
+        <div class="headline">
+          <h3>Customers Say</h3>
+          <h1>PREVIEW</h1>
+        </div>
+        <div class="row align-items-center text-center">
+          <div class="col-lg-12 col-md-12">
+            <div
+              class="image-box mb-5"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img src="./images/avatar-04.jpg.webp" alt="" />
+            </div>
+            <div class="text-box" data-aos="fade-up" data-aos-duration="1000">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                nihil, quisquam atque aspernatur beatae facilis soluta id minus
+                assumenda ad.
+              </p>
+              <div
+                class="rate-box d-flex g-2 my-3 align-items-center justify-content-center"
+              >
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>MARIE SIMMONS - NEW YORK</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonials -->
+    <!--Start Video -->
+    <div class="video vh-100">
+      <div class="video-container h-100">
+        <div class="headline">
+          <h3>Discover</h3>
+          <h1>OUR VIDEO</h1>
+        </div>
+        <div class="image-holder h-100 position-relative">
+          <img
+            src="./images/bg-cover-video-02.jpg.webp"
+            alt=""
+            class="w-100 h-100"
+          />
+          <button
+            type="button"
+            class="btn position-absolute top-50 start-50 translate-middle"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="custom-video">
+          <!-- Button trigger modal -->
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" id="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/QpIHg8dhBEE"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Video -->
+    <!-- Start Blog -->
+    <section class="blog">
+      <div class="blog-container container">
+        <div class="headline">
+          <h3>Latest News</h3>
+          <h1>THE BLOG</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img
+                src="./images/blog-01.jpg.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">BEST PLACES FOR WINE</h5>
+                <p class="card-text">
+                  Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
+                  eros.
+                </p>
+                <a href="#" class="btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img
+                src="./images/blog-02.jpg.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">EGGS AND CHEESE</h5>
+                <p class="card-text">
+                  Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
+                  eros.
+                </p>
+                <a href="#" class="btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img
+                src="./images/blog-03.jpg.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">STYLE THE WEDDING PARTY</h5>
+                <p class="card-text">
+                  Phasellus lorem enim, luctus ut velit eget, con-vallis egestas
+                  eros.
+                </p>
+                <a href="#" class="btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Blog -->
+    <!-- Start Subscribe -->
+    <section class="subscribe">
+      <div class="subscribe-container container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-4 col-md-4">
+            <div class="text-box">
+              <h4>SPECIALS SIGN UP</h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <form action="">
+              <input class="w-100" type="email" placeholder="Email Adress" />
+              <i class="fa-solid fa-envelope"></i>
+            </form>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="button-holder">
+              <button class="btn">SIGN-UP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Subscribe -->
+    <!-- Start Footer -->
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="first-col">
+              <div class="contact mb-5">
+                <h5>CONTACT US</h5>
+                <p>
+                  <i class="fa-solid fa-location-dot"></i>
+                  8th floor, 379 Hudson St, New York, NY 10018
+                </p>
+                <p>
+                  <i class="fa-solid fa-phone"></i>
+                  (+1) 96 716 6879
+                </p>
+                <p><i class="fa-solid fa-envelope"></i> contact@site.com</p>
+              </div>
+              <div class="openning">
+                <h5>OPENING TIMES</h5>
+                <p>09:30 AM – 11:00 PM</p>
+                <p>Every Day</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="seconed-col">
+              <h5>LATEST TWITTER</h5>
+              <h6>
+                <i class="fa-brands fa-twitter"></i>
+                <span> @colorlib </span>
+              </h6>
+              <p>
+                Activello is a good option. It has a slider built into that
+                displays the featured image in the slider.
+                <span>https://buff.ly/2zaSfAQ</span>
+              </p>
+              <p class="py-3">21 Dec 2017</p>
+              <h6>
+                <i class="fa-brands fa-twitter"></i>
+                <span> @colorlib </span>
+              </h6>
+              <p>
+                Activello is a good option. It has a slider built into that
+                displays the featured image in the slider.
+                <span>https://buff.ly/2zaSfAQ</span>
+              </p>
+              <p>21 Dec 2017</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="third-col">
+              <h5>GALLERY</h5>
+              <div class="row g-2">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                  <div class="image-holder">
+                    <img
+                      class="w-100"
+                      src="./images/photo-gallery-01.jpg.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                  <div class="image-holder">
+                    <img
+                      class="w-100"
+                      src="./images/photo-gallery-02.jpg.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                  <div class="image-holder">
+                    <img
+                      class="w-100"
+                      src="./images/photo-gallery-03.jpg.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                  <div class="image-holder">
+                    <img
+                      class="w-100"
+                      src="./images/photo-gallery-04.jpg.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                  <div class="image-holder">
+                    <img
+                      class="w-100"
+                      src="./images/photo-gallery-05.jpg.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                  <div class="image-holder">
+                    <img
+                      class="w-100"
+                      src="./images/photo-gallery-06.jpg.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                  <div class="image-holder">
+                    <img
+                      class="w-100"
+                      src="./images/photo-gallery-07.jpg.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                  <div class="image-holder">
+                    <img
+                      class="w-100"
+                      src="./images/photo-gallery-08.jpg.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                  <div class="image-holder">
+                    <img
+                      class="w-100"
+                      src="./images/photo-gallery-09.jpg.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                  <div class="image-holder">
+                    <img
+                      class="w-100"
+                      src="./images/photo-gallery-10.jpg.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                  <div class="image-holder">
+                    <img
+                      class="w-100"
+                      src="./images/photo-gallery-11.jpg.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                  <div class="image-holder">
+                    <img
+                      class="w-100"
+                      src="./images/photo-gallery-12.jpg.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <div
+        class="copyright-container container d-flex align-items-center justify-content-between"
+      >
+        <div class="left-side d-flex g-2">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+          </li>
+        </div>
+        <div class="right-side">
+          <p>@ 2017 Colorlib. Get The Theme</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
